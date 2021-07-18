@@ -9,12 +9,9 @@
 </p>
    
 <br>
+   
 <h1>Mobile</h1>
-<p>
-    <img width: "700" src="src/assets/images/mobile1.png"
-</p>
-<p>
-    <img width: "700" src="src/assets/images/mobile2.png"
-</p>
+
+![mobile](src/assets/images/mobile1.png) ![mobile](src/assets/images/mobile2.png)
    
    
