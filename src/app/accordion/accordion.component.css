@@ -37,9 +37,6 @@ h1 {
     padding: 5px 0 5px 20px;
     font-weight: 500;  
 }
-.spanMinus {
-    display: none;
-}
 
 .cardAccordion button {
     border: none;

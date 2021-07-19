@@ -2,12 +2,6 @@
     .hideStyle {
        display: none;
     }
-    .spanPlusHide {
-        display: none;
-    }
-    .spanMinusShow {
-        display: inline-block;
-    } 
 </style>
 
 <section>
@@ -16,9 +10,9 @@
     <div id="cardsAccordion">
         <div class="cardAccordion">
             <h2>TITLE 
-                <button name="button" value="hideStyle, spanPlusHide" (click)="hide1 = !hide1; spanPlusHide1 = !spanPlusHide1; spanMinusShow1 = !spanMinusShow1">
-                    <span class="spanPlus" [ngClass]="{spanPlusHide: spanPlusHide1}">+</span>
-                    <span class="spanMinus" [ngClass]="{spanMinusShow: spanMinusShow1}">-</span>
+                <button name="button" value="hideStyle, spanPlusHide" (click)="hide1 = !hide1">
+                    <span *ngIf="hide1 == true; else minusIcon">+</span>
+                    <ng-template #minusIcon><span>-</span></ng-template>
                 </button>
             </h2>
             <p [ngClass]="{hideStyle: hide1}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint perferendis corporis autem. Architecto, repellat. Doloremque, mollitia quae. Quae quia optio corporis obcaecati earum eum quisquam non laborum architecto. Quibusdam totam delectus officiis libero molestiae.</p>
@@ -26,9 +20,9 @@
 
         <div class="cardAccordion">
             <h2>TITLE 
-                <button name="button" value="hideStyle" (click)="hide2 = !hide2; spanPlusHide2 = !spanPlusHide2; spanMinusShow2 = !spanMinusShow2">
-                    <span class="spanPlus" [ngClass]="{spanPlusHide: spanPlusHide2}">+</span>
-                    <span class="spanMinus" [ngClass]="{spanMinusShow: spanMinusShow2}">-</span>
+                <button name="button" value="hideStyle" (click)="hide2 = !hide2">
+                    <span *ngIf="hide2 == true; else minusIcon">+</span>
+                    <ng-template #minusIcon><span>-</span></ng-template>
                 </button>
             </h2>
             <p [ngClass]="{hideStyle: hide2}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam, deserunt necessitatibus distinctio quia debitis! Consectetur iste amet voluptates pariatur delectus aliquid officia recusandae odit, iure vero laudantium. Dignissimos harum ex illo voluptatum asperiores nemo!</p>
@@ -36,9 +30,9 @@
 
         <div class="cardAccordion">
             <h2>TITLE 
-                <button name="button" value="hideStyle" (click)="hide3 = !hide3; spanPlusHide3 = !spanPlusHide3; spanMinusShow3 = !spanMinusShow3">
-                    <span class="spanPlus" [ngClass]="{spanPlusHide: spanPlusHide3}">+</span>
-                    <span class="spanMinus" [ngClass]="{spanMinusShow: spanMinusShow3}">-</span>
+                <button name="button" value="hideStyle" (click)="hide3 = !hide3">
+                    <span *ngIf="hide3 == true; else minusIcon">+</span>
+                    <ng-template #minusIcon><span>-</span></ng-template>
                 </button>
             </h2>
             <p [ngClass]="{hideStyle: hide3}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam, deserunt necessitatibus distinctio quia debitis! Consectetur iste amet voluptates pariatur delectus aliquid officia recusandae odit, iure vero laudantium. Dignissimos harum ex illo voluptatum asperiores nemo!</p>
@@ -46,9 +40,9 @@
 
         <div class="cardAccordion">
             <h2>TITLE 
-                <button name="button" value="hideStyle" (click)="hide4 = !hide4; spanPlusHide4 = !spanPlusHide4; spanMinusShow4 = !spanMinusShow4">
-                    <span class="spanPlus" [ngClass]="{spanPlusHide: spanPlusHide4}">+</span>
-                    <span class="spanMinus" [ngClass]="{spanMinusShow: spanMinusShow4}">-</span>
+                <button name="button" value="hideStyle" (click)="hide4 = !hide4">
+                    <span *ngIf="hide4 == true; else minusIcon">+</span>
+                    <ng-template #minusIcon><span>-</span></ng-template>
                 </button>
             </h2>
             <p [ngClass]="{hideStyle: hide4}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam, deserunt necessitatibus distinctio quia debitis! Consectetur iste amet voluptates pariatur delectus aliquid officia recusandae odit, iure vero laudantium. Dignissimos harum ex illo voluptatum asperiores nemo!</p>
@@ -56,9 +50,9 @@
 
         <div class="cardAccordion">
             <h2>TITLE 
-                <button name="button" value="hideStyle" (click)="hide5 = !hide5; spanPlusHide5 = !spanPlusHide5; spanMinusShow5 = !spanMinusShow5">
-                    <span class="spanPlus" [ngClass]="{spanPlusHide: spanPlusHide5}">+</span>
-                    <span class="spanMinus" [ngClass]="{spanMinusShow: spanMinusShow5}">-</span>
+                <button name="button" value="hideStyle" (click)="hide5 = !hide5">
+                    <span *ngIf="hide5 == true; else minusIcon">+</span>
+                    <ng-template #minusIcon><span>-</span></ng-template>
                 </button>
             </h2>
             <p [ngClass]="{hideStyle: hide5}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam, deserunt necessitatibus distinctio quia debitis! Consectetur iste amet voluptates pariatur delectus aliquid officia recusandae odit, iure vero laudantium. Dignissimos harum ex illo voluptatum asperiores nemo!</p>
@@ -66,9 +60,9 @@
 
         <div class="cardAccordion">
             <h2>TITLE 
-                <button name="button" value="hideStyle" (click)="hide6 = !hide6; spanPlusHide6 = !spanPlusHide6; spanMinusShow6 = !spanMinusShow6">
-                    <span class="spanPlus" [ngClass]="{spanPlusHide: spanPlusHide6}">+</span>
-                    <span class="spanMinus" [ngClass]="{spanMinusShow: spanMinusShow6}">-</span>
+                <button name="button" value="hideStyle" (click)="hide6 = !hide6">
+                    <span *ngIf="hide6 == true; else minusIcon">+</span>
+                    <ng-template #minusIcon><span>-</span></ng-template>
                 </button>
             </h2>
             <p [ngClass]="{hideStyle: hide6}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam, deserunt necessitatibus distinctio quia debitis! Consectetur iste amet voluptates pariatur delectus aliquid officia recusandae odit, iure vero laudantium. Dignissimos harum ex illo voluptatum asperiores nemo!</p>
